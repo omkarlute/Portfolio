@@ -264,6 +264,8 @@ export default function OmkarPortfolio() {
     { title: "Web3 & Blockchain", icon: <Cpu size={22} className="text-purple-400" />, skills: ["Smart Contracts", "Ethereum", "Hardhat", "MetaMask", "Ethers.js", "IPFS", "NFTs", "DeFi"], color: "from-purple-500 to-pink-500" },
     { title: "Web Tech", icon: <Database size={22} className="text-green-400" />, skills: ["Next.js", "React", "Node.js", "MongoDB", "MySQL", "HTML/CSS"], color: "from-green-500 to-teal-500" },
     { title: "AI & Data Science", icon: <Award size={22} className="text-orange-400" />, skills: ["Machine Learning", "OpenCV", "Data Viz", "Deep Learning (TensorFlow, Keras)","NLP","Data Preprocessing","Streamlit ", "Computer Vision"], color: "from-orange-500 to-red-500" },
+    { title: "Game Development", icon: <Cpu size={22} className="text-yellow-400" />, skills: ["Unreal Engine", "Blueprints"], color: "from-yellow-500 to-orange-500" }
+
   ];
 
   const project = {
