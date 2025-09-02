@@ -517,87 +517,155 @@ export default function OmkarPortfolio() {
       </Section>
 
       {/* PROJECTS */}
-      <Section id="projects" className="py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-14">
-            <h2 className="text-4xl md:text-6xl font-black tracking-tight">Featured Project</h2>
-            <div className="mx-auto mt-4 h-1 w-24 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full" />
+<Section id="projects" className="py-24">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="text-center mb-14">
+      <h2 className="text-4xl md:text-6xl font-black tracking-tight">Featured Projects</h2>
+      <div className="mx-auto mt-4 h-1 w-24 bg-gradient-to-r from-cyan-400 to-purple-500 rounded-full" />
+    </div>
+
+    {/* TaskBucks Project */}
+    <TiltCard className="will-change-transform mb-12">
+      <GlowCard className="relative p-8 md:p-12 overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">TaskBucks Telegram Mini App</h3>
+            <p className="text-gray-300 text-lg mb-6">
+              A Telegram Mini App for task-based rewards where users complete tasks and withdraw earnings seamlessly. 
+              Includes an integrated Admin Panel for task & withdrawal management.
+            </p>
+
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-center gap-2">
+                <span className="size-1.5 rounded-full bg-cyan-400" />
+                <span className="text-gray-300">Built on Telegram Mini App framework</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="size-1.5 rounded-full bg-cyan-400" />
+                <span className="text-gray-300">Admin Panel for tasks & withdrawals</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="size-1.5 rounded-full bg-cyan-400" />
+                <span className="text-gray-300">Secure backend with MongoDB</span>
+              </li>
+            </ul>
+
+            <div className="flex flex-wrap gap-2 mb-6">
+              {["React", "Next.js", "Node.js", "MongoDB", "Telegram Bot API", "Vercel"].map((t) => (
+                <span key={t} className="px-3 py-1 rounded-lg text-sm font-medium bg-gradient-to-r from-cyan-500 to-purple-500">
+                  {t}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex gap-3 flex-wrap">
+              <Magnetic>
+                <a href="https://taskbucksbot.vercel.app/" target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 font-semibold hover:opacity-90 transition">
+                  🚀 Live Demo
+                </a>
+              </Magnetic>
+              <Magnetic>
+                <a href="https://github.com/omkarlute/Tele-miniapp" target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg px-6 py-3 bg-gradient-to-r from-green-500 to-teal-500 font-semibold hover:opacity-90 transition">
+                  <Github size={18} /> GitHub Repo
+                </a>
+              </Magnetic>
+            </div>
           </div>
 
-          <TiltCard className="will-change-transform">
-            <GlowCard className="relative p-8 md:p-12 overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-10 items-center">
-                <div>
-                  <h3 className="text-3xl md:text-4xl font-bold mb-4">{project.title}</h3>
-                  <p className="text-gray-300 text-lg mb-6">{project.description}</p>
-
-                  <ul className="space-y-2 mb-6">
-                    {project.features.map((f) => (
-                      <li key={f} className="flex items-center gap-2">
-                        <span className="size-1.5 rounded-full bg-cyan-400" />
-                        <span className="text-gray-300">{f}</span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {project.technologies.map((t) => (
-                      <span key={t} className={cn("px-3 py-1 rounded-lg text-sm font-medium bg-gradient-to-r", project.color)}>
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="flex gap-3 flex-wrap">
-                    <Magnetic>
-                      <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-lg px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 font-semibold hover:opacity-90 transition">
-                        <Github size={18} /> View Code
-                      </a>
-                    </Magnetic>
-                  </div>
-                </div>
-
-                <div className="relative">
-                  <div className="absolute inset-0 rounded-2xl blur-2xl bg-gradient-to-r from-cyan-400/20 to-purple-500/20" />
-                  <div className="relative rounded-2xl border border-cyan-500/30 p-8 bg-black/40">
-                    <div className="text-center">
-                      <div className="text-6xl mb-3">🛡️</div>
-                      <h4 className="text-xl font-bold mb-3">Cyber Security AI</h4>
-                      <div className="space-y-2">
-                        <div className="h-2 rounded-full bg-gradient-to-r from-green-500 to-cyan-500 animate-pulse" />
-                        <div className="h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 animate-pulse [animation-delay:.35s]" />
-                        <div className="h-2 rounded-full bg-gradient-to-r from-orange-500 to-red-500 animate-pulse [animation-delay:.7s]" />
-                      </div>
-                      <p className="text-gray-400 text-sm mt-4">Real-time threat detection</p>
-                    </div>
-                  </div>
-                </div>
+          <div className="relative">
+            <div className="absolute inset-0 rounded-2xl blur-2xl bg-gradient-to-r from-cyan-400/20 to-purple-500/20" />
+            <div className="relative rounded-2xl border border-cyan-500/30 p-8 bg-black/40">
+              <div className="text-center">
+                <div className="text-6xl mb-3">📱</div>
+                <h4 className="text-xl font-bold mb-3">Telegram Mini App</h4>
+                <p className="text-gray-400 text-sm mt-4">Task-based Rewards Platform</p>
               </div>
-            </GlowCard>
-          </TiltCard>
-
-          {/* >>> REPLACEMENT for "Extra Project 1/2/3": a single, premium CTA card <<< */}
-          <Link href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="block mt-10">
-            <GlowCard className="group p-8 md:p-12 flex items-center justify-between gap-6 hover:-translate-y-0.5 transition-transform">
-              <div className="flex items-center gap-4">
-                <div className="p-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-500">
-                  <Github size={32} />
-                </div>
-                <div>
-                  <h4 className="text-2xl md:text-3xl font-bold">View all my projects</h4>
-                  <p className="text-gray-400">Explore complete code, experiments, and case studies on GitHub.</p>
-                </div>
-              </div>
-              <div className="shrink-0">
-                <span className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-4 py-2 text-sm text-gray-200 group-hover:border-cyan-400">
-                  Open GitHub <ExternalLink size={16} />
-                </span>
-              </div>
-            </GlowCard>
-          </Link>
+            </div>
+          </div>
         </div>
-      </Section>
+      </GlowCard>
+    </TiltCard>
+
+    {/* Cyber Security Project (existing) */}
+    <TiltCard className="will-change-transform">
+      <GlowCard className="relative p-8 md:p-12 overflow-hidden">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4">Enhancing Cyber Security using Random Forest</h3>
+            <p className="text-gray-300 text-lg mb-6">
+              ML system for intrusion and malware detection with real-time dashboard and model comparison.
+            </p>
+
+            <ul className="space-y-2 mb-6">
+              <li className="flex items-center gap-2">
+                <span className="size-1.5 rounded-full bg-cyan-400" />
+                <span className="text-gray-300">Real-time intrusion detection</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="size-1.5 rounded-full bg-cyan-400" />
+                <span className="text-gray-300">Multiple ML model comparison</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="size-1.5 rounded-full bg-cyan-400" />
+                <span className="text-gray-300">High-accuracy anomaly detection</span>
+              </li>
+            </ul>
+
+            <div className="flex flex-wrap gap-2 mb-6">
+              {["Python", "Scikit-learn", "Streamlit", "Random Forest", "XGBoost", "Machine Learning"].map((t) => (
+                <span key={t} className="px-3 py-1 rounded-lg text-sm font-medium bg-gradient-to-r from-cyan-500 to-purple-500">
+                  {t}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex gap-3 flex-wrap">
+              <Magnetic>
+                <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-lg px-6 py-3 bg-gradient-to-r from-cyan-500 to-purple-500 font-semibold hover:opacity-90 transition">
+                  <Github size={18} /> View Code
+                </a>
+              </Magnetic>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute inset-0 rounded-2xl blur-2xl bg-gradient-to-r from-cyan-400/20 to-purple-500/20" />
+            <div className="relative rounded-2xl border border-cyan-500/30 p-8 bg-black/40">
+              <div className="text-center">
+                <div className="text-6xl mb-3">🛡️</div>
+                <h4 className="text-xl font-bold mb-3">Cyber Security AI</h4>
+                <p className="text-gray-400 text-sm mt-4">Real-time threat detection</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </GlowCard>
+    </TiltCard>
+
+    {/* GitHub CTA */}
+    <Link href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="block mt-10">
+      <GlowCard className="group p-8 md:p-12 flex items-center justify-between gap-6 hover:-translate-y-0.5 transition-transform">
+        <div className="flex items-center gap-4">
+          <div className="p-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-500">
+            <Github size={32} />
+          </div>
+          <div>
+            <h4 className="text-2xl md:text-3xl font-bold">View all my projects</h4>
+            <p className="text-gray-400">Explore complete code, experiments, and case studies on GitHub.</p>
+          </div>
+        </div>
+        <div className="shrink-0">
+          <span className="inline-flex items-center gap-2 rounded-lg border border-white/15 px-4 py-2 text-sm text-gray-200 group-hover:border-cyan-400">
+            Open GitHub <ExternalLink size={16} />
+          </span>
+        </div>
+      </GlowCard>
+    </Link>
+  </div>
+</Section>
 
       {/* CONTACT */}
       <Section id="contact" className="py-24">
