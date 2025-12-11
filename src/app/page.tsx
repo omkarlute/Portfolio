@@ -239,25 +239,32 @@ export default function OmkarPortfolio() {
   const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 
   const experiences = [
-    {
-      title: "Web3 Developer",
-      company: "Kleekai Project",
-  
-      description:
-        "Developing a full-stack presale site with smart contracts, wallet flows, and responsive UI. Implemented secure presale mechanics.",
-      technologies: ["Solidity", "Hardhat", "Ethers.js", "React", "Web3.js"],
-      color: "from-purple-500 to-pink-500",
-    },
-    {
-      title: "Full Stack Development Intern",
-      company: "Soft Corner",
-      
-      description:
-        "Built real-time hand-gesture controls using Python, OpenCV, and MediaPipe to enhance accessibility and system navigation.",
-      technologies: ["Python", "OpenCV", "MediaPipe", "Computer Vision"],
-      color: "from-cyan-500 to-blue-500",
-    },
-  ];
+  {
+    title: "Web3 & Telegram Mini App Developer",
+    company: "Stealth-Mode Web3 Gaming Startup",
+    description:
+      "Architected and developed a tap-to-earn Telegram Mini App forming the core user experience of an early-stage Web3 gaming platform. Built gameplay systems, scalable backend services, and Web3-ready infrastructure designed for future on-chain expansion.",
+    technologies: ["Next.js", "Node.js", "MongoDB", "Telegram Mini Apps", "Ethers.js"],
+    color: "from-yellow-500 to-orange-500",
+  },
+  {
+    title: "Web3 Developer",
+    company: "Kleekai Project",
+    description:
+      "Developing a full-stack presale site with smart contracts, wallet flows, and responsive UI. Implemented secure presale mechanics.",
+    technologies: ["Solidity", "Hardhat", "Ethers.js", "React", "Web3.js"],
+    color: "from-purple-500 to-pink-500",
+  },
+  {
+    title: "Full Stack Development Intern",
+    company: "Soft Corner",
+    description:
+      "Built real-time hand-gesture controls using Python, OpenCV, and MediaPipe to enhance accessibility and system navigation.",
+    technologies: ["Python", "OpenCV", "MediaPipe", "Computer Vision"],
+    color: "from-cyan-500 to-blue-500",
+  },
+];
+
 
   const skillCategories = [
     { title: "Programming Languages", icon: <Code size={22} className="text-cyan-400" />, skills: ["Python", "JavaScript", "Solidity", "C++", "C"], color: "from-cyan-500 to-blue-500" },
