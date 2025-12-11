@@ -241,7 +241,7 @@ export default function OmkarPortfolio() {
   const experiences = [
   {
     title: "Web3 & Telegram Mini App Developer",
-    company: "Stealth-Mode Web3 Gaming Startup",
+    company: "Early-Stage Web3 Startup (Stealth) ",
     description:
       "Architected and developed a tap-to-earn Telegram Mini App forming the core user experience of an early-stage Web3 gaming platform. Built gameplay systems, scalable backend services, and Web3-ready infrastructure designed for future on-chain expansion.",
     technologies: ["Next.js", "Node.js", "MongoDB", "Telegram Mini Apps", "Ethers.js"],
