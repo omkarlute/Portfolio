@@ -27,7 +27,7 @@ const useMouseVars = () => {
   }, []);
 };
 
-/** ---------- HeroOrb (paste among other components near top of file) ---------- */
+/** ---------- HeroOrb (paste among other components near top of file.) ---------- */
 const HeroOrb: React.FC = () => {
   return (
     <div
